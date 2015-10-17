@@ -41,3 +41,6 @@ node_modules
 content/apps/* 
 content/data/* 
 content/images/*
+!content/apps/README.md
+!content/data/README.md
+!content/images/README.md
