@@ -107,6 +107,7 @@
   height: 100px;
   text-align: center;
   margin: 20px;
+  cursor: pointer;
 }
 .footer-link span {
   padding-top: 17px;

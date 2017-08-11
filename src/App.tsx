@@ -22,7 +22,7 @@ class App extends React.Component<{}, {}> {
           <div className="acrylic acrylic-light shadow">
             <div className="header-text">
               <h1 style={{ color: 'black' }}>David Bottiau</h1>
-              <h3 style={{ color: '#404040' }}>Software developer</h3>
+              <h3 style={{ color: '#404040', marginLeft: 2 }}>Software developer</h3>
             </div>
           </div>
         </div>
@@ -37,19 +37,31 @@ class App extends React.Component<{}, {}> {
         </div>
 
         <div className="footer">
-          <div className="footer-link acrylic acrylic-light shadow">
+          <div
+            className="footer-link acrylic acrylic-light shadow"
+            onClick={() => window.open('https://github.com/Odonno')}
+          >
             <span className="fa fa-4x fa-github" />
           </div>
 
-          <div className="footer-link acrylic acrylic-light shadow">
+          <div
+            className="footer-link acrylic acrylic-light shadow"
+            onClick={() => window.open('https://twitter.com/dbottiau')}
+          >
             <span className="fa fa-4x fa-twitter" />
           </div>
 
-          <div className="footer-link acrylic acrylic-light shadow">
+          <div
+            className="footer-link acrylic acrylic-light shadow"
+            onClick={() => window.open('https://fr.linkedin.com/in/david-bottiau')}
+          >
             <span className="fa fa-4x fa-linkedin-square" />
           </div>
 
-          <div className="footer-link acrylic acrylic-light shadow">
+          <div
+            className="footer-link acrylic acrylic-light shadow"
+            onClick={() => window.open('https://medium.com/@dbottiau')}
+          >
             <span className="fa fa-4x fa-medium" />
           </div>
         </div>
