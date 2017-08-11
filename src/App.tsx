@@ -1,7 +1,10 @@
 import * as React from 'react';
 import './App.css';
-
+import './FluentDesign.css';
+import './Motion.css';
 const ClicketyClack = require('react-clicketyclack').default;
+
+const rootClassName = 'root ' + (navigator.appName === 'Microsoft Internet Explorer' ? 'ie-browser' : 'not-ie-browser');
 
 const keywordLines = [
   '#microsoft #windows10 #surface',
@@ -17,7 +20,7 @@ const keywordLines = [
 class App extends React.Component<{}, {}> {
   render() {
     return (
-      <div className="root">
+      <div className={rootClassName}>
         <div className="header">
           <div className="acrylic acrylic-light shadow">
             <div className="header-text">
@@ -28,7 +31,7 @@ class App extends React.Component<{}, {}> {
         </div>
 
         <div className="content">
-          <div className="acrylic acrylic-dark shadow" style={{ minHeight: 70 }}>
+          <div className="content-element acrylic acrylic-dark shadow" style={{ minHeight: 70 }}>
             <div className="content-text">
               <ClicketyClack className="ClicketyClack" lines={keywordLines} speed={100} pause={2000} />
               <span className="ClicketyClack__cursor">_</span>

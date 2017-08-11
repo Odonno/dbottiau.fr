@@ -1,0 +1,14 @@
+.not-ie-browser .content-element {
+  transition: all .2s ease-out; 
+}
+.not-ie-browser .content-element:hover {
+  width: 700px;
+  font-size: 28px;
+}
+
+.not-ie-browser .footer-link { 
+  transition: all .2s ease-out; 
+}
+.not-ie-browser .footer-link:hover {
+  transform: scale(1.4); 
+}
