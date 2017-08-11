@@ -4,7 +4,8 @@ import './FluentDesign.css';
 import './Motion.css';
 const ClicketyClack = require('react-clicketyclack').default;
 
-const rootClassName = 'root ' + (navigator.appName === 'Microsoft Internet Explorer' ? 'ie-browser' : 'not-ie-browser');
+const isIE = navigator.appName === 'Microsoft Internet Explorer';
+const rootClassName = 'root ' + (isIE ? 'ie-browser' : 'not-ie-browser');
 
 const keywordLines = [
   '#microsoft #windows10 #surface',
