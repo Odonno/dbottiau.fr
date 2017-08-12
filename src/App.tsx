@@ -32,7 +32,7 @@ class App extends React.Component<{}, {}> {
         </div>
 
         <div className="content">
-          <div className="content-element acrylic acrylic-dark shadow" style={{ minHeight: 70 }}>
+          <div className="content-element acrylic acrylic-dark shadow">
             <div className="content-text">
               <ClicketyClack className="ClicketyClack" lines={keywordLines} speed={100} pause={2000} />
               <span className="ClicketyClack__cursor">_</span>
@@ -45,28 +45,32 @@ class App extends React.Component<{}, {}> {
             className="footer-link acrylic acrylic-light shadow"
             onClick={() => window.open('https://github.com/Odonno')}
           >
-            <span className="fa fa-4x fa-github" />
+            <span className="fa fa-4x fa-github hide-xs" />
+            <span className="fa fa-2x fa-github display-xs" />
           </div>
 
           <div
             className="footer-link acrylic acrylic-light shadow"
             onClick={() => window.open('https://twitter.com/dbottiau')}
           >
-            <span className="fa fa-4x fa-twitter" />
+            <span className="fa fa-4x fa-twitter hide-xs" />
+            <span className="fa fa-2x fa-twitter display-xs" />
           </div>
 
           <div
             className="footer-link acrylic acrylic-light shadow"
             onClick={() => window.open('https://fr.linkedin.com/in/david-bottiau')}
           >
-            <span className="fa fa-4x fa-linkedin-square" />
+            <span className="fa fa-4x fa-linkedin-square hide-xs" />
+            <span className="fa fa-2x fa-linkedin-square display-xs" />
           </div>
 
           <div
             className="footer-link acrylic acrylic-light shadow"
             onClick={() => window.open('https://medium.com/@dbottiau')}
           >
-            <span className="fa fa-4x fa-medium" />
+            <span className="fa fa-4x fa-medium hide-xs" />
+            <span className="fa fa-2x fa-medium display-xs" />
           </div>
         </div>
       </div>

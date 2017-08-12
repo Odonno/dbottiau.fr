@@ -1,3 +1,4 @@
+/* Motion */
 .not-ie-browser .content-element {
   transition: all .2s ease-out; 
 }
@@ -11,4 +12,11 @@
 }
 .not-ie-browser .footer-link:hover {
   transform: scale(1.4); 
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .not-ie-browser .content-element:hover {
+    font-size: 18px;
+  }
 }
