@@ -26,7 +26,9 @@ class App extends React.Component<{}, {}> {
           <div className="acrylic acrylic-light shadow">
             <div className="header-text">
               <h1 style={{ color: 'black' }}>David Bottiau</h1>
-              <h3 style={{ color: '#404040', marginLeft: 2 }}>Software developer</h3>
+              <h3 style={{ color: '#404040', marginLeft: 2 }}>
+                Software craftsman / Microsoft addict / Open minded / Lean being / UX supporter
+              </h3>
             </div>
           </div>
         </div>
